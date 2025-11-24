@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat";
+  scroll-padding-top: 11.5rem;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header{
+    background: oklch(46.284% 0.17088 27.143);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-container{
+    max-width: 120rem;
+    margin-inline: auto;
+    text-align: center;
+    padding-block: 2rem;
+    color: #ffffff;
+
+    h1{
+        margin-bottom: 1rem;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+    }
+
+    a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    li:hover{
+        transform: scale(1.1);
+        font-weight: 700;
+        transition: .4s;
+    }
+}
+
+main {
+    background: oklch(100% 0.00011 271.152);
+    min-height: calc(100svh - 18.8rem);
+}
+
+.main-container {
+    padding-block: 14.8rem 4em;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        max-width: 68rem;
+        margin-inline: auto;
+        line-height: 2.5rem;
+    }
+
+    section{
+        margin-bottom: 4rem;
+
+        div{
+            width: 6rem;
+            height: 6rem;
+            background-color: oklch(51.756% 0.15522 14.769);
+            margin-inline: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .blue {
+            background: oklch(52.23% 0.15375 24.125);
+        }
+    }
+
+    mark {
+        background: oklch(61.491% 0.23888 28.072);
+    }
+}
+
+#relative{
+    .blue{
+        position: relative;
+        bottom: 3rem;
+        left: 3rem;
+    }
+}
+
+#absolute {
+    .blue{
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+}
+
+.arrow {
+     background: oklch(35.828% 0.13076 26.947);
+     width: fit-content;
+     padding: 1rem;
+     border-radius: 50%;
+     position: absolute;
+     bottom: 5rem;
+     right: 5rem;
+
+}
